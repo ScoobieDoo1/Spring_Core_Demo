@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="dog" class="springdemo.Dog">
+		<property name="name" value="Cooper"></property>
+		<property name="breed" value="Labrador"></property>
+		<property name="year" value="6"></property>
+		<property name="food" ref="foods"></property>
+	</bean>
+	<bean id="foods" class="springdemo.Food">
+		<property name="type" value="chicken"></property>
+		<property name="quantity" value="5"></property>
+		
+	</bean>
+</beans>
